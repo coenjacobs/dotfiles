@@ -8,6 +8,9 @@ set backspace=indent,eol,start
 " Add line numbers
 set number
 
+" Highlight search results
+set hlsearch
+
 " Switch syntax highlighting on
 syntax on
 
