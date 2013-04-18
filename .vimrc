@@ -1,18 +1,9 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
-" Make backspace behave in a sane manner.
-set backspace=indent,eol,start
-
-" Add line numbers
-set number
-
-" Highlight search results
-set hlsearch
-
-" Tab size
-set tabstop=4
+" Set options
+set nocompatible " Vim settings over vi defaults
+set backspace=indent,eol,start " Make backspace behave in a sane manner.
+set number " Add line numbers
+set hlsearch " Highlight search results
+set tabstop=4 " Tab size to 4 spaces
 
 " Switch syntax highlighting on
 syntax on
