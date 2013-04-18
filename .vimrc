@@ -11,6 +11,9 @@ set number
 " Highlight search results
 set hlsearch
 
+" Tab size
+set tabstop=4
+
 " Switch syntax highlighting on
 syntax on
 
