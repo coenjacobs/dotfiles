@@ -5,6 +5,7 @@ set number " Add line numbers
 set hlsearch " Highlight search results
 set tabstop=4 " Tab size to 4 spaces
 set ignorecase " Default to ignoring case in searches
+set incsearch " Enable incremental search by default
 
 " Switch syntax highlighting on
 syntax on
