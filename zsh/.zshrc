@@ -1,2 +1,2 @@
 # Prompt setup
-PROMPT='%{%n%} at %{%m%} in %{%d%} '
+PROMPT='%{%d%} › '
