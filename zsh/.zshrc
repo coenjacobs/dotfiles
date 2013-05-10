@@ -6,5 +6,5 @@ parse_git_branch () {
 # Called after every command
 function precmd() {
 	# Set the prompt
-	PROMPT="%{%d%}$(parse_git_branch) › "
+	PROMPT="%{%~%}$(parse_git_branch) › "
 }
