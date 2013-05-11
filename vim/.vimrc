@@ -6,6 +6,8 @@ set hlsearch " Highlight search results
 set tabstop=4 " Tab size to 4 spaces
 set ignorecase " Default to ignoring case in searches
 set incsearch " Enable incremental search by default
+set autoindent " Auto indent new lines
+set smartindent " .. and be smart with it!
 
 " Switch syntax highlighting on
 syntax on
