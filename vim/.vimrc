@@ -1,5 +1,7 @@
 " Fire up Pathogen
 source ~/.dotfiles/vim/bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect( 'bundle/{}', '~/.dotfiles/vim/bundle/{}' )
+execute pathogen#helptags()
 
 " Set options
 set nocompatible " Vim settings over vi defaults
