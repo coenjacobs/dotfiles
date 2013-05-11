@@ -1,3 +1,6 @@
+" Fire up Pathogen
+source ~/.dotfiles/vim/bundle/pathogen/autoload/pathogen.vim
+
 " Set options
 set nocompatible " Vim settings over vi defaults
 set backspace=indent,eol,start " Make backspace behave in a sane manner.
