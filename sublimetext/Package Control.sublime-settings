@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"Package Control",
+		"SideBarEnhancements",
 		"SublimeLinter",
 		"Wordpress"
 	]
