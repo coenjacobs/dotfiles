@@ -9,3 +9,6 @@ plugins=(git)
 
 # Launch main oh-my-zsh file
 source $ZSH/oh-my-zsh.sh
+
+# Add RVM
+PATH=$PATH:$HOME/.rvm/bin
