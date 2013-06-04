@@ -1,5 +1,5 @@
 {
-	"sublimelinter_delay": 0,
+	"sublimelinter_delay": 0.5,
 	"sublimelinter_mark_style": "fill",
 	"sublimelinter_popup_errors_on_save": true,
 	"sublimelinter_gutter_marks": false
