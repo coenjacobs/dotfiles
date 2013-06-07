@@ -2,8 +2,10 @@
 	"installed_packages":
 	[
 		"Git",
+		"GitGutter",
 		"Package Control",
 		"SideBarEnhancements",
+		"SideBarGit",
 		"SublimeLinter",
 		"Wordpress"
 	]
