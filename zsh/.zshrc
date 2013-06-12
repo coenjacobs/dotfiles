@@ -10,8 +10,9 @@ plugins=(git)
 # Launch main oh-my-zsh file
 source $ZSH/oh-my-zsh.sh
 
-# Load git aliases file (manual for now)
+# Load aliases files (manual for now)
 source $HOME/.dotfiles/git/aliases.zsh
+source $HOME/.dotfiles/vagrant/aliases.zsh
 
 # Add RVM
 PATH=$PATH:$HOME/.rvm/bin

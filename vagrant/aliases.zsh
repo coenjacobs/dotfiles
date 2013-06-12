@@ -1,0 +1,1 @@
+alias vsh='vagrant ssh'
