@@ -1,1 +1,7 @@
 alias vsh='vagrant ssh'
+alias vup='vagrant up'
+alias vhalt='vagrant halt'
+alias vsuspend='vagrant suspend'
+alias vresume='vagrant resume'
+alias vreload='vagrant reload'
+alias vstatus='vagrant status'
