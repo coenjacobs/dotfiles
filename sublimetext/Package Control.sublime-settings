@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"DashDoc",
 		"Git",
 		"GitGutter",
 		"LESS",
@@ -9,6 +10,7 @@
 		"SideBarEnhancements",
 		"SideBarGit",
 		"SublimeLinter",
+		"WooCommerce Autocomplete",
 		"Wordpress"
 	]
 }
