@@ -7,5 +7,6 @@
 	],
 	"show_minimap": false,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true
+	"vintage_start_in_command_mode": true,
+	"rulers": [80, 120]
 }
