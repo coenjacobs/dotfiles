@@ -11,5 +11,6 @@
 	"rulers": [80, 120],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"open_files_in_new_window": false
+	"open_files_in_new_window": false,
+	"scroll_past_end": true
 }
