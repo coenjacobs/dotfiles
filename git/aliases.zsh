@@ -11,3 +11,4 @@ alias gbranch='git branch'
 alias gcommit='git commit'
 alias gdiff='git diff'
 alias gstatus='git status -sb' # show minimized list of status
+alias gcheckout='git checkout'
