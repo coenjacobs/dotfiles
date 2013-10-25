@@ -12,3 +12,4 @@ alias gcommit='git commit'
 alias gdiff='git diff'
 alias gstatus='git status -sb' # show minimized list of status
 alias gcheckout='git checkout'
+alias glog='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate' 
