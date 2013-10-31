@@ -7,10 +7,10 @@ then
 fi
 
 # More helpful aliases
+alias gadd='git add'
 alias gbranch='git branch'
+alias gcheckout='git checkout'
 alias gcommit='git commit'
 alias gdiff='git diff'
-alias gstatus='git status -sb'
-alias gcheckout='git checkout'
 alias glog='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate' 
-alias gadd='git add'
+alias gstatus='git status -sb'
