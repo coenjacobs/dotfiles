@@ -16,3 +16,4 @@ alias glog='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" 
 alias gpull='git pull'
 alias gpush='git push'
 alias gstatus='git status -sb'
+alias gtag='git tag'
