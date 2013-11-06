@@ -2,6 +2,7 @@
 set nocompatible " Vim settings over vi defaults
 set backspace=indent,eol,start " Make backspace behave in a sane manner.
 set number " Add line numbers
+set relativenumber " Relative numbers by default
 set hlsearch " Highlight search results
 set tabstop=4 " Tab size to 4 spaces
 set ignorecase " Default to ignoring case in searches
