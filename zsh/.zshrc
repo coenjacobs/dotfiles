@@ -16,7 +16,7 @@ vcs_info_wrapper() {
 	fi
 }
 
-PROMPT='⚡  %~ $(vcs_info_wrapper)'
+PROMPT='⚡ %m %~ $(vcs_info_wrapper)'
 
 # Load aliases files (manual for now)
 source $HOME/.dotfiles/git/aliases.zsh
