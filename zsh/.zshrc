@@ -20,6 +20,7 @@ PROMPT='⚡ %m %~ $(vcs_info_wrapper)'
 
 # Load aliases files (manual for now)
 source $HOME/.dotfiles/git/aliases.zsh
+source $HOME/.dotfiles/svn/aliases.zsh
 source $HOME/.dotfiles/vagrant/aliases.zsh
 
 # Add RVM
