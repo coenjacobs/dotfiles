@@ -1,5 +1,12 @@
-" Set options
+" Set options required for Vundle
 set nocompatible " Vim settings over vi defaults
+filetype off
+
+" Fire up Vundle
+set rtp+=~/.dotfiles/vim/bundle/vundle/
+call vundle#rc()
+
+" Set more options
 set backspace=indent,eol,start " Make backspace behave in a sane manner.
 set number " Add line numbers
 set relativenumber " Relative numbers by default
