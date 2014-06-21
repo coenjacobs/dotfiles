@@ -4,7 +4,13 @@
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="meta P" />
   </action>
+  <action id="GotoSymbol">
+    <keyboard-shortcut first-keystroke="meta R" />
+  </action>
   <action id="ParameterInfo" />
+  <action id="Refresh" />
+  <action id="Replace" />
+  <action id="Rerun" />
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="control alt ENTER" />
   </action>
