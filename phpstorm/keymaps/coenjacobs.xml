@@ -4,6 +4,9 @@
   <action id="ActivateStructureToolWindow">
     <keyboard-shortcut first-keystroke="meta 2" />
   </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="meta 7" />
+  </action>
   <action id="DuplicatesForm.SendToRight" />
   <action id="FileChooser.GotoProject" />
   <action id="FileChooser.TogglePathShowing" />
@@ -31,9 +34,6 @@
   </action>
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="control alt UP" />
-  </action>
-  <action id="org.jetbrains.plugins.terminal.OpenLocalTerminalAction">
-    <keyboard-shortcut first-keystroke="meta 7" />
   </action>
 </keymap>
 
