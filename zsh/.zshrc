@@ -17,6 +17,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.dotfiles/git/aliases.zsh
 source $HOME/.dotfiles/svn/aliases.zsh
 source $HOME/.dotfiles/vagrant/aliases.zsh
+source $HOME/.dotfiles/php/aliases.zsh
 
 # User configuration
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
