@@ -4,6 +4,7 @@
   <action id="ActivateStructureToolWindow">
     <keyboard-shortcut first-keystroke="meta 2" />
   </action>
+  <action id="ActivateTODOToolWindow" />
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="meta 7" />
   </action>
@@ -15,6 +16,9 @@
   </action>
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="meta R" />
+  </action>
+  <action id="OpenGruntConsole">
+    <keyboard-shortcut first-keystroke="meta 6" />
   </action>
   <action id="ParameterInfo" />
   <action id="Refresh" />
