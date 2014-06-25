@@ -9,6 +9,9 @@
     <keyboard-shortcut first-keystroke="meta 7" />
   </action>
   <action id="DuplicatesForm.SendToRight" />
+  <action id="EditorMatchBrace">
+    <keyboard-shortcut first-keystroke="shift meta 5" />
+  </action>
   <action id="FileChooser.GotoProject" />
   <action id="FileChooser.TogglePathShowing" />
   <action id="GotoFile">
