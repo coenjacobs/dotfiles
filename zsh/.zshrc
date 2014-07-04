@@ -4,8 +4,10 @@ export ZSH=$HOME/.dotfiles/zsh/bundle/oh-my-zsh
 # Disable auto updates as it's version controlled
 DISABLE_AUTO_UPDATE="true"
 
+ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom/
+
 # Theme
-ZSH_THEME="cloud"
+ZSH_THEME="coenjacobs"
 
 # Plugins
 plugins=(git vagrant brew)
