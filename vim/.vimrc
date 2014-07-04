@@ -16,6 +16,7 @@ set ignorecase " Default to ignoring case in searches
 set incsearch " Enable incremental search by default
 set autoindent " Auto indent new lines
 set smartindent " .. and be smart with it!
+set backupcopy=yes
 
 " Switch syntax highlighting on
 syntax on
