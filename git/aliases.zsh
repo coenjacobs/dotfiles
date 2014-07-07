@@ -16,6 +16,7 @@ alias glast='git --no-pager log -n 10 --pretty=format:"%C(yellow)%h%Cred%d %Cres
 alias glog='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate' 
 alias gpull='git pull'
 alias gpush='git push'
+alias gshow='git show'
 alias gstatus='git status -sb'
 alias gtag='git tag'
 alias gfetch='git fetch'
