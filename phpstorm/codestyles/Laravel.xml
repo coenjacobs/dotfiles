@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<code_scheme name="Laravel">
+  <codeStyleSettings language="PHP">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>
+
