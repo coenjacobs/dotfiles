@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <code_scheme name="Laravel">
+  <XML>
+    <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+  </XML>
   <codeStyleSettings language="PHP">
     <indentOptions>
       <option name="USE_TAB_CHARACTER" value="true" />
