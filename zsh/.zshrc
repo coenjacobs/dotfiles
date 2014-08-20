@@ -10,7 +10,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom/
 ZSH_THEME="coenjacobs"
 
 # Plugins
-plugins=(git vagrant brew composer)
+plugins=(laravel4 git vagrant brew composer)
 
 # Fire up Oh My ZSH
 source $ZSH/oh-my-zsh.sh
