@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <code_scheme name="Laravel">
   <PHPCodeStyleSettings>
     <option name="ALIGN_KEY_VALUE_PAIRS" value="true" />
@@ -53,3 +54,4 @@
     </indentOptions>
   </codeStyleSettings>
 </code_scheme>
+
