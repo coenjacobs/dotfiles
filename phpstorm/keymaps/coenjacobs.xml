@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <keymap version="1" name="coenjacobs" parent="Mac OS X 10.5+">
   <action id="ActivateFavoritesToolWindow" />
   <action id="ActivateStructureToolWindow">
@@ -42,5 +41,7 @@
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="control alt UP" />
   </action>
+  <action id="WelcomeScreen.ReopenRecent">
+    <keyboard-shortcut first-keystroke="shift meta O" />
+  </action>
 </keymap>
-
