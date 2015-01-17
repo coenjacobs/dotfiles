@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <code_scheme name="WordPress">
   <option name="USE_SAME_INDENTS" value="true" />
   <option name="IGNORE_SAME_INDENTS_FOR_LANGUAGES" value="true" />
@@ -131,4 +130,3 @@
     </indentOptions>
   </codeStyleSettings>
 </code_scheme>
-
