@@ -22,7 +22,7 @@ source $HOME/.dotfiles/vagrant/aliases.zsh
 source $HOME/.dotfiles/php/aliases.zsh
 
 # User configuration
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/home/coenjacobs/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Add RVM
 #PATH=$PATH:$HOME/.rvm/bin
