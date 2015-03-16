@@ -16,9 +16,18 @@
   <action id="EditorMatchBrace">
     <keyboard-shortcut first-keystroke="shift meta 5" />
   </action>
+  <action id="EditorSplitLine" />
   <action id="FileChooser.GotoProject" />
   <action id="FileChooser.TogglePathShowing" />
-  <action id="FindUsages" />
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="meta BACK_SLASH" />
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="meta B" />
+    <mouse-shortcut keystroke="meta button1" />
+    <mouse-shortcut keystroke="button2" />
+    <keyboard-shortcut first-keystroke="meta ENTER" />
+  </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="meta P" />
   </action>
