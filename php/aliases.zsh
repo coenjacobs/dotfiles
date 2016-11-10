@@ -1,5 +1,3 @@
-alias phpunit='vendor/bin/phpunit'
-alias phpspec='vendor/bin/phpspec'
 alias artisan='php artisan'
 
 # Composer stuff
