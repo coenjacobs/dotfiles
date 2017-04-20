@@ -20,6 +20,7 @@ source $HOME/.dotfiles/git/aliases.zsh
 source $HOME/.dotfiles/svn/aliases.zsh
 source $HOME/.dotfiles/vagrant/aliases.zsh
 source $HOME/.dotfiles/php/aliases.zsh
+source $HOME/.dotfiles/tmux/aliases.zsh
 
 # User configuration
 export PATH="/home/coenjacobs/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
