@@ -4,7 +4,32 @@ filetype off
 
 " Fire up Vundle
 set rtp+=~/.dotfiles/vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
+
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-syntastic/syntastic'
+
+call vundle#end()
+
+" easytags
+let g:easytags_async = 1
+
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" syntastic
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_php_checkers=['php']
+let g:syntastic_check_on_wq = 0
 
 " Set more options
 set backspace=indent,eol,start " Make backspace behave in a sane manner.
