@@ -25,3 +25,9 @@ then
 	mv ~/.zshrc ~/.old-zshrc
 fi
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+
+if [ -e ~/.composer/composer.json ];
+then
+	mv ~/.composer/composer.json ~/.composer/.old-composer.json
+fi
+ln -s ~/.dotfiles/composer/composer.json ~/.composer/composer.json
