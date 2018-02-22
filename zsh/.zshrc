@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.dotfiles/zsh/bundle/oh-my-zsh
 
+export GOPATH=$(go env GOPATH)
+
 # Disable auto updates as it's version controlled
 DISABLE_AUTO_UPDATE="true"
 
@@ -23,7 +25,7 @@ source $HOME/.dotfiles/php/aliases.zsh
 source $HOME/.dotfiles/tmux/aliases.zsh
 
 # User configuration
-export PATH="/home/coenjacobs/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="$GOPATH/bin:/home/coenjacobs/.npm:/home/coenjacobs/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Add RVM
 #PATH=$PATH:$HOME/.rvm/bin
