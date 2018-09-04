@@ -6,8 +6,7 @@ filetype off
 set rtp+=~/.dotfiles/vim/bundle/vundle/
 call vundle#begin()
 
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
@@ -15,8 +14,8 @@ Plugin 'tpope/vim-vinegar'
 
 call vundle#end()
 
-" easytags
-let g:easytags_async = 1
+" vim-gutentags
+let g:gutentags_cache_dir = '~/.vim/gutentags'
 
 " ctrlp
 let g:ctrlp_map = '<c-p>'
