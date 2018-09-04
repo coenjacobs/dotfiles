@@ -42,6 +42,11 @@ set incsearch " Enable incremental search by default
 set autoindent " Auto indent new lines
 set smartindent " .. and be smart with it!
 set backupcopy=yes
+set directory=/tmp " don't pollute working directory with swap files
+set noerrorbells " disable error bells
+set wildmenu
+set wildmode=longest:full,full " wildmenu and friends
+set scrolloff=5 " leave 5 lines of space horizontal scrolling
 
 " Switch syntax highlighting on
 syntax on
