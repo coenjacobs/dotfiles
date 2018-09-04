@@ -11,6 +11,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'tpope/vim-vinegar'
 
 call vundle#end()
 
