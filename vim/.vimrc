@@ -34,7 +34,8 @@ let g:syntastic_check_on_wq = 0
 " Set more options
 set backspace=indent,eol,start " Make backspace behave in a sane manner.
 set number " Add line numbers
-set relativenumber " Relative numbers by default
+set ttyfast
+set lazyredraw
 set hlsearch " Highlight search results
 set tabstop=4 " Tab size to 4 spaces
 set ignorecase " Default to ignoring case in searches
