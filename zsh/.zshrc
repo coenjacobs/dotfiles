@@ -45,3 +45,5 @@ then
 else
      eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
+
+[ -f ~/.dotfiles/fzf/.fzf.zsh ] && source ~/.dotfiles/fzf/.fzf.zsh

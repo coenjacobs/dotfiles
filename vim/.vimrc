@@ -7,19 +7,19 @@ set rtp+=~/.dotfiles/vim/bundle/vundle/
 call vundle#begin()
 
 Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-vinegar'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 
+" fzf
+set rtp+=/usr/local/opt/fzf
+map <C-p> :FZF<cr>
+
 " vim-gutentags
 let g:gutentags_cache_dir = '~/.vim/gutentags'
-
-" ctrlp
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 " syntastic
 "set statusline+=%#warningmsg#
