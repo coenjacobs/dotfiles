@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.dotfiles/zsh/bundle/oh-my-zsh
 
+export LC_ALL=en_US.UTF-8
+
 export GOPATH=$(go env GOPATH)
 
 # Disable auto updates as it's version controlled
@@ -33,5 +35,5 @@ export PATH="$GOPATH/bin:/home/coenjacobs/.npm:/home/coenjacobs/.composer/vendor
 [ -f ~/.dotfiles/fzf/.fzf.zsh ] && source ~/.dotfiles/fzf/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
