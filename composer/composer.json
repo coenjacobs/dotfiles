@@ -4,7 +4,6 @@
     "require": {
         "wp-cli/wp-cli": "^2.2",
         "weprovide/valet-plus": "^1.0",
-        "vimeo/psalm": "^3.4",
         "jonathantorres/construct": "^2.0"
     }
 }
