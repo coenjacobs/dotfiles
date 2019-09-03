@@ -20,6 +20,7 @@ plugins=(git vagrant brew composer gpg-agent)
 source $ZSH/oh-my-zsh.sh
 
 # Load aliases files (manual for now)
+source $HOME/.dotfiles/docker/aliases.zsh
 source $HOME/.dotfiles/git/aliases.zsh
 source $HOME/.dotfiles/svn/aliases.zsh
 source $HOME/.dotfiles/vagrant/aliases.zsh
