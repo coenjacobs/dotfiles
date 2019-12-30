@@ -34,7 +34,3 @@ export PATH="$GOPATH/bin:/home/coenjacobs/.npm:/home/coenjacobs/.composer/vendor
 #PATH=$PATH:$HOME/.rvm/bin
 
 [ -f ~/.dotfiles/fzf/.fzf.zsh ] && source ~/.dotfiles/fzf/.fzf.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
