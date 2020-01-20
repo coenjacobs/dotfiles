@@ -28,7 +28,7 @@ source $HOME/.dotfiles/php/aliases.zsh
 source $HOME/.dotfiles/tmux/aliases.zsh
 
 # User configuration
-export PATH="$GOPATH/bin:/home/coenjacobs/.npm:/home/coenjacobs/.composer/vendor/bin:node_modules/.bin::vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$GOPATH/bin:/home/coenjacobs/.npm:/home/coenjacobs/.composer/vendor/bin:node_modules/.bin::vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Add RVM
 #PATH=$PATH:$HOME/.rvm/bin
