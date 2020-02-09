@@ -14,7 +14,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom/
 ZSH_THEME="coenjacobs"
 
 # Plugins
-plugins=(git vagrant brew composer gpg-agent)
+plugins=(git vagrant brew composer gpg-agent zsh-autosuggestions)
 
 # Fire up Oh My ZSH
 source $ZSH/oh-my-zsh.sh
