@@ -6,20 +6,19 @@ filetype off
 set rtp+=~/.dotfiles/vim/bundle/vundle/
 call vundle#begin()
 
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
 Plugin 'junegunn/fzf.vim'
+Plugin 'fatih/vim-go'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
 " fzf
 set rtp+=/usr/local/opt/fzf
 map <C-p> :FZF<cr>
-
-" vim-gutentags
-let g:gutentags_cache_dir = '~/.vim/gutentags'
 
 " syntastic
 "set statusline+=%#warningmsg#
