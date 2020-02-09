@@ -13,8 +13,15 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'junegunn/fzf.vim'
 Plugin 'fatih/vim-go'
 Plugin 'rust-lang/rust.vim'
+Plugin 'preservim/nerdtree'
 
 call vundle#end()
+
+" nerdtree
+let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<cr>
+" autoclose if NERDTree is last pane open
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " fzf
 set rtp+=/usr/local/opt/fzf
