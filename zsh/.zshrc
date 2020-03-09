@@ -44,4 +44,4 @@ export NVM_DIR="$HOME/.nvm"
 # add our default nvm node (`nvm alias default 10.16.0`) to path without loading nvm
 export PATH="$NVM_DIR/versions/node/v$(<$NVM_DIR/alias/default)/bin:$PATH"
 # alias `nvm` to this one liner lazy load of the normal nvm script
-alias nvm="unalias nvm; [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"; nvm $@"
+alias nvm="unalias nvm; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; nvm $@"
