@@ -25,6 +25,7 @@ source $HOME/.dotfiles/git/aliases.zsh
 source $HOME/.dotfiles/svn/aliases.zsh
 source $HOME/.dotfiles/vagrant/aliases.zsh
 source $HOME/.dotfiles/php/aliases.zsh
+source $HOME/.dotfiles/python/aliases.zsh
 source $HOME/.dotfiles/tmux/aliases.zsh
 
 # User configuration
