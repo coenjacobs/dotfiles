@@ -2,10 +2,7 @@
 set nocompatible " Vim settings over vi defaults
 filetype off
 
-" Fire up Vundle
-set rtp+=~/.dotfiles/vim/bundle/vundle/
-call vundle#begin()
-
+call plug#begin('~/.vim/plugged')
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -14,8 +11,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'fatih/vim-go'
 Plugin 'rust-lang/rust.vim'
 Plugin 'preservim/nerdtree'
-
-call vundle#end()
+call plug#end()
 
 " nerdtree
 let NERDTreeShowHidden=1
