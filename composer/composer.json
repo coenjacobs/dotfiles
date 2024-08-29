@@ -1,9 +1,0 @@
-{
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "jonathantorres/construct": "^2.0",
-        "laravel/valet": "^2.7",
-        "wp-cli/wp-cli": "^2.4"
-    }
-}
