@@ -1,0 +1,4 @@
+.phpactor.json
+.DS_Store
+.vscode
+*.code-workspace
