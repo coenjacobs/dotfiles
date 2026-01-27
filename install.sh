@@ -28,8 +28,9 @@ link_file() {
 # Create ~/.config if it doesn't exist
 mkdir -p "$HOME/.config"
 
-# Bash
+# Bash - link both files (works on any OS)
 link_file "$DOTFILES_DIR/bash/.bash_profile" "$HOME/.bash_profile"
+link_file "$DOTFILES_DIR/bash/.bashrc" "$HOME/.bashrc"
 
 # Tmux
 link_file "$DOTFILES_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
@@ -51,6 +52,9 @@ echo ""
 echo "Installation complete!"
 echo ""
 echo "Next steps:"
-echo "  1. Reload bash config:  source ~/.bash_profile"
+echo "  1. Reload bash config:  source ~/.bashrc"
 echo "  2. In tmux, install plugins:  prefix + I  (Ctrl-a + I)"
 echo "  3. Open nvim to let plugins install automatically"
+echo ""
+echo "Linux note: Install xclip for tmux clipboard support:"
+echo "  sudo apt install xclip"
