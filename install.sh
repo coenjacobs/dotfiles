@@ -45,6 +45,11 @@ git config --global core.excludesfile "$HOME/.gitignore"
 # Note: docker/aliases and git/aliases are sourced automatically by .bashrc
 # No symlinks needed - they are sourced relative to the dotfiles directory
 
+# Claude Code - symlink config files into ~/.claude/ (not the whole directory)
+mkdir -p "$HOME/.claude"
+link_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
+link_file "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh"
+
 # Install TPM (Tmux Plugin Manager) if not present
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
     echo "Installing TPM (Tmux Plugin Manager)..."
