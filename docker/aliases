@@ -1,0 +1,9 @@
+# Docker aliases
+alias dc='docker compose'
+alias dcup='docker compose up -d'
+alias dcdown='docker compose down'
+alias dclog='docker compose logs -f'
+alias dcps='docker compose ps'
+alias dcexec='docker compose exec'
+alias dcbuild='docker compose build'
+alias dcrestart='docker compose restart'

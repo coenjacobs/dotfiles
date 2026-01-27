@@ -11,7 +11,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls", "phpactor" },
+				ensure_installed = { "lua_ls", "ts_ls", "phpactor", "cssls", "html" },
 			})
 		end,
 	},
@@ -25,9 +25,11 @@ return {
 			vim.lsp.config('lua_ls', { capabilities = capabilities })
 			vim.lsp.config('ts_ls', { capabilities = capabilities })
 			vim.lsp.config('phpactor', { capabilities = capabilities })
+			vim.lsp.config('cssls', { capabilities = capabilities })
+			vim.lsp.config('html', { capabilities = capabilities })
 
 			-- Enable the servers
-			vim.lsp.enable({ 'lua_ls', 'ts_ls', 'phpactor' })
+			vim.lsp.enable({ 'lua_ls', 'ts_ls', 'phpactor', 'cssls', 'html' })
 
 			-- LSP keymaps
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})

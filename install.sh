@@ -42,6 +42,9 @@ link_file "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 link_file "$DOTFILES_DIR/git/.gitignore" "$HOME/.gitignore"
 git config --global core.excludesfile "$HOME/.gitignore"
 
+# Note: docker/aliases and git/aliases are sourced automatically by .bashrc
+# No symlinks needed - they are sourced relative to the dotfiles directory
+
 # Install TPM (Tmux Plugin Manager) if not present
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
     echo "Installing TPM (Tmux Plugin Manager)..."

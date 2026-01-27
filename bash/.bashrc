@@ -64,3 +64,8 @@ elif [[ -f /usr/share/bash-completion/bash_completion ]]; then
 elif [[ -f /etc/bash_completion ]]; then
     . /etc/bash_completion
 fi
+
+# Source additional alias files
+DOTFILES_DIR="$(dirname "$(readlink -f ~/.bashrc)" 2>/dev/null || dirname "$(realpath ~/.bashrc)" 2>/dev/null)"
+[[ -f "$DOTFILES_DIR/../docker/aliases" ]] && . "$DOTFILES_DIR/../docker/aliases"
+[[ -f "$DOTFILES_DIR/../git/aliases" ]] && . "$DOTFILES_DIR/../git/aliases"
