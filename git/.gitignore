@@ -1,4 +1,46 @@
-.phpactor.json
+# macOS system files
 .DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Editor files
 .vscode
 *.code-workspace
+.idea/
+*.swp
+*.swo
+*~
+
+# PHP
+.phpactor.json
+vendor/
+composer.lock
+
+# JavaScript/Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.eslintcache
+.npm
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
+
+# Logs
+*.log
+logs/
+
+# Cache directories
+.cache/
+.tmp/
