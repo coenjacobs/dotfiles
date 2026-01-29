@@ -1,0 +1,20 @@
+# packages/Brewfile - Cross-platform (macOS + Linux)
+# Development tools installed via Homebrew
+
+# Version control
+brew "git"
+brew "gh"
+
+# Editors and terminal
+brew "neovim"
+brew "tmux"
+
+# Runtime
+brew "node"
+
+# Search and utilities
+brew "ripgrep"
+brew "fzf"
+brew "jq"
+
+# Note: Claude Code is installed via npm in install.sh (after node is available)

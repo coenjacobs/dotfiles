@@ -1,0 +1,5 @@
+# packages/Brewfile.macos - macOS only
+# GUI applications and Mac-specific tools
+
+cask "docker"
+cask "1password-cli"

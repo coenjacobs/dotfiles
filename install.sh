@@ -1,13 +1,104 @@
 #!/bin/bash
 
 # Dotfiles installation script
-# Creates symlinks and sets up configurations
+# Installs development tools via Homebrew and sets up configuration symlinks
 
 set -e
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "Installing dotfiles from $DOTFILES_DIR"
+echo ""
+
+# =============================================================================
+# OS Detection
+# =============================================================================
+
+detect_os() {
+    case "$(uname -s)" in
+        Darwin)
+            echo "macos"
+            ;;
+        Linux)
+            echo "linux"
+            ;;
+        *)
+            echo "unknown"
+            ;;
+    esac
+}
+
+OS=$(detect_os)
+
+if [ "$OS" = "unknown" ]; then
+    echo "Unsupported operating system."
+    echo "For Windows, please use install.ps1 instead."
+    exit 1
+fi
+
+echo "Detected OS: $OS"
+echo ""
+
+# =============================================================================
+# Homebrew Installation
+# =============================================================================
+
+install_homebrew() {
+    if command -v brew &> /dev/null; then
+        echo "Homebrew is already installed"
+        return 0
+    fi
+
+    echo "Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    # Add Homebrew to PATH for Linux (macOS usually handles this automatically)
+    if [ "$OS" = "linux" ]; then
+        echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.bashrc"
+        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    fi
+
+    echo "Homebrew installed successfully"
+}
+
+install_homebrew
+
+# Ensure brew is in PATH for this session
+if [ "$OS" = "linux" ] && [ -d "/home/linuxbrew/.linuxbrew" ]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+echo ""
+
+# =============================================================================
+# Package Installation via Homebrew
+# =============================================================================
+
+echo "Installing packages from Brewfile..."
+brew bundle --file="$DOTFILES_DIR/packages/Brewfile"
+
+if [ "$OS" = "macos" ]; then
+    echo ""
+    echo "Installing macOS-specific packages..."
+    brew bundle --file="$DOTFILES_DIR/packages/Brewfile.macos"
+fi
+
+echo ""
+
+# =============================================================================
+# NPM Global Packages
+# =============================================================================
+
+echo "Installing npm global packages..."
+npm install -g @anthropic-ai/claude-code
+
+echo ""
+
+# =============================================================================
+# Configuration Symlinks
+# =============================================================================
+
+echo "Setting up configuration symlinks..."
 
 # Backup and symlink function
 link_file() {
@@ -57,12 +148,20 @@ if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
 fi
 
 echo ""
+echo "============================================="
 echo "Installation complete!"
+echo "============================================="
 echo ""
 echo "Next steps:"
 echo "  1. Reload bash config:  source ~/.bashrc"
 echo "  2. In tmux, install plugins:  prefix + I  (Ctrl-a + I)"
 echo "  3. Open nvim to let plugins install automatically"
 echo ""
-echo "Linux note: Install xclip for tmux clipboard support:"
-echo "  sudo apt install xclip"
+if [ "$OS" = "linux" ]; then
+    echo "Linux note: Install xclip for tmux clipboard support:"
+    echo "  sudo apt install xclip"
+    echo ""
+fi
+echo "Secrets (SSH keys, API keys) must be set up manually on local machines"
+echo "or via Ansible on VPS deployments."
+echo ""
