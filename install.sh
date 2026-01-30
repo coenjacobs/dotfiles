@@ -50,7 +50,7 @@ install_homebrew() {
     fi
 
     echo "Installing Homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # Add Homebrew to PATH for Linux (macOS usually handles this automatically)
     if [ "$OS" = "linux" ]; then
