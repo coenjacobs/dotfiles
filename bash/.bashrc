@@ -1,8 +1,16 @@
 # Suppress the zsh warning on macOS (harmless on Linux)
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Path configuration - add paths that exist
-[[ -d "/opt/homebrew/bin" ]] && export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+# Homebrew setup (must come before other PATH additions)
+# Linux
+if [[ -d "/home/linuxbrew/.linuxbrew" ]]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# macOS (Apple Silicon)
+elif [[ -d "/opt/homebrew" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Additional paths
 [[ -d "$HOME/.local/bin" ]] && export PATH="$HOME/.local/bin:$PATH"
 
 # Shell options

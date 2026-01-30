@@ -52,9 +52,8 @@ install_homebrew() {
     echo "Installing Homebrew..."
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # Add Homebrew to PATH for Linux (macOS usually handles this automatically)
+    # Set up Homebrew for current session (permanent PATH is in dotfiles .bashrc)
     if [ "$OS" = "linux" ]; then
-        echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.bashrc"
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     fi
 
