@@ -11,6 +11,7 @@ elif [[ -d "/opt/homebrew" ]]; then
 fi
 
 # Additional paths
+[[ -d "$HOME/.claude/local/bin" ]] && export PATH="$HOME/.claude/local/bin:$PATH"
 [[ -d "$HOME/.local/bin" ]] && export PATH="$HOME/.local/bin:$PATH"
 
 # Shell options
