@@ -89,7 +89,7 @@ echo ""
 # =============================================================================
 
 echo "Installing Claude Code..."
-curl -fsSL https://claude.ai/install.sh | sh
+curl -fsSL https://claude.ai/install.sh | bash
 
 echo ""
 
