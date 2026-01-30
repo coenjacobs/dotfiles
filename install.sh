@@ -85,11 +85,11 @@ fi
 echo ""
 
 # =============================================================================
-# NPM Global Packages
+# Claude Code Installation
 # =============================================================================
 
-echo "Installing npm global packages..."
-npm install -g @anthropic-ai/claude-code
+echo "Installing Claude Code..."
+curl -fsSL https://claude.ai/install.sh | sh
 
 echo ""
 

@@ -77,3 +77,6 @@ fi
 DOTFILES_DIR="$(dirname "$(readlink -f ~/.bashrc)" 2>/dev/null || dirname "$(realpath ~/.bashrc)" 2>/dev/null)"
 [[ -f "$DOTFILES_DIR/../docker/aliases" ]] && . "$DOTFILES_DIR/../docker/aliases"
 [[ -f "$DOTFILES_DIR/../git/aliases" ]] && . "$DOTFILES_DIR/../git/aliases"
+
+# Source local overrides (secrets, machine-specific settings)
+[[ -f ~/.bashrc.local ]] && . ~/.bashrc.local
