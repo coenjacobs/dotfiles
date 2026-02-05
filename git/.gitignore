@@ -44,3 +44,6 @@ logs/
 # Cache directories
 .cache/
 .tmp/
+
+# Claude Code
+.claude/settings.local.json
