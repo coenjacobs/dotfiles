@@ -1,5 +1,6 @@
 {
   "theme": "dark",
+  "plansDirectory": "./.claude/plans",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
