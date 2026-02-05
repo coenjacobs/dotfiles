@@ -1,4 +1,5 @@
 {
+  "coAuthorInGitCommits": false,
   "theme": "dark",
   "plansDirectory": "./.claude/plans",
   "statusLine": {
