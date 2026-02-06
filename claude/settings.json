@@ -1,5 +1,8 @@
 {
-  "coAuthorInGitCommits": false,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "theme": "dark",
   "plansDirectory": "./.claude/plans",
   "statusLine": {
