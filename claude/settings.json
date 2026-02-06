@@ -3,6 +3,7 @@
     "commit": "",
     "pr": ""
   },
+  "alwaysThinkingEnabled": true,
   "theme": "dark",
   "plansDirectory": "./.claude/plans",
   "statusLine": {
