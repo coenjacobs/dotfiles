@@ -18,6 +18,7 @@ brew "fzf"
 brew "jq"
 
 # AI tools
+tap "anomalyco/tap"
 brew "anomalyco/tap/opencode"
 
 # Note: Claude Code is installed via npm in install.sh (after node is available)
