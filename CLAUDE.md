@@ -34,14 +34,15 @@ Post-install steps:
 - `bash/` - Shell configuration (`.bash_profile`, `.bashrc`)
 - `nvim/` - Neovim config using lazy.nvim plugin manager
 - `tmux/` - Tmux configuration with TPM
-- `git/` - Global gitignore and git aliases
+- `git/` - Git config, gitignore, and aliases
 - `docker/` - Docker compose aliases
+- `opencode/` - OpenCode configuration (theme, provider settings)
 - `claude/` - Claude Code settings and status line script
 - `packages/` - Package definitions (Brewfile, winget.json)
 
 ### Key Patterns
 
-**Alias sourcing**: `.bashrc` dynamically sources aliases from `docker/aliases` and `git/aliases` by resolving the dotfiles directory from the symlinked `.bashrc` location.
+**Auto-sourcing**: `.bashrc` auto-discovers and sources `*/env` and `*/aliases` files from all topic directories. Environment files are loaded before aliases.
 
 **Symlink-based**: Configs are symlinked (not copied) so changes in this repo are immediately reflected.
 
