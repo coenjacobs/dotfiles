@@ -128,9 +128,9 @@ link_file "$DOTFILES_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
 # Neovim
 link_file "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
-# Git global ignore
+# Git
+link_file "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
 link_file "$DOTFILES_DIR/git/.gitignore" "$HOME/.gitignore"
-git config --global core.excludesfile "$HOME/.gitignore"
 
 # Note: docker/aliases and git/aliases are sourced automatically by .bashrc
 # No symlinks needed - they are sourced relative to the dotfiles directory
