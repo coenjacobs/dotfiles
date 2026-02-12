@@ -1,2 +1,10 @@
-# Git aliases (additional to .bashrc)
+# Git aliases
+alias gs='git status'
+alias gd='git diff'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline -20'
+alias gco='git checkout'
+alias ga='git add'
+alias gb='git branch'
 alias lg='lazygit'

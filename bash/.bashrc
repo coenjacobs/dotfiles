@@ -35,23 +35,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Git aliases
-alias gs='git status'
-alias gd='git diff'
-alias gc='git commit'
-alias gp='git push'
-alias gl='git log --oneline -20'
-alias gco='git checkout'
-alias ga='git add'
-alias gb='git branch'
-
 # Safety aliases
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# Editor alias
-alias vim='nvim'
 
 # Git-aware prompt
 __git_branch() {
@@ -74,10 +61,11 @@ elif [[ -f /etc/bash_completion ]]; then
     . /etc/bash_completion
 fi
 
-# Source additional alias files
+# Source topic-based alias files
 DOTFILES_DIR="$(dirname "$(readlink -f ~/.bashrc)" 2>/dev/null || dirname "$(realpath ~/.bashrc)" 2>/dev/null)"
-[[ -f "$DOTFILES_DIR/../docker/aliases" ]] && . "$DOTFILES_DIR/../docker/aliases"
-[[ -f "$DOTFILES_DIR/../git/aliases" ]] && . "$DOTFILES_DIR/../git/aliases"
+for alias_file in "$DOTFILES_DIR"/../*/aliases; do
+    [[ -f "$alias_file" ]] && . "$alias_file"
+done
 
 # Source local overrides (secrets, machine-specific settings)
 [[ -f ~/.bashrc.local ]] && . ~/.bashrc.local
