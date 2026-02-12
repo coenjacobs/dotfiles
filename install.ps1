@@ -145,21 +145,23 @@ $NvimSource = Join-Path $DotfilesDir "nvim"
 $NvimDest = Join-Path $env:LOCALAPPDATA "nvim"
 Set-ConfigLink -Source $NvimSource -Destination $NvimDest -IsDirectory
 
-# Git global ignore
+# Git
+$GitConfigSource = Join-Path $DotfilesDir "git\.gitconfig"
+$GitConfigDest = Join-Path $HOME ".gitconfig"
+Set-ConfigLink -Source $GitConfigSource -Destination $GitConfigDest
+
 $GitIgnoreSource = Join-Path $DotfilesDir "git\.gitignore"
 $GitIgnoreDest = Join-Path $HOME ".gitignore"
 Set-ConfigLink -Source $GitIgnoreSource -Destination $GitIgnoreDest
 
-# Configure git to use the global ignore file
-try {
-    $null = Get-Command git -ErrorAction Stop
-    git config --global core.excludesfile $GitIgnoreDest
-    Write-Host "  Configured git global excludesfile" -ForegroundColor Green
+# OpenCode
+$OpenCodeConfigDir = Join-Path $env:APPDATA "opencode"
+if (-not (Test-Path $OpenCodeConfigDir)) {
+    New-Item -ItemType Directory -Path $OpenCodeConfigDir -Force | Out-Null
 }
-catch {
-    Write-Host "  Warning: git not found in PATH yet. Run this after restart:" -ForegroundColor Yellow
-    Write-Host "  git config --global core.excludesfile $GitIgnoreDest" -ForegroundColor Yellow
-}
+$OpenCodeSource = Join-Path $DotfilesDir "opencode\opencode.json"
+$OpenCodeDest = Join-Path $OpenCodeConfigDir "opencode.json"
+Set-ConfigLink -Source $OpenCodeSource -Destination $OpenCodeDest
 
 # Claude Code settings
 $ClaudeDir = Join-Path $HOME ".claude"
