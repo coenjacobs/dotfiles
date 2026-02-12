@@ -24,10 +24,6 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL=ignoreboth:erasedups  # Ignore duplicates and commands starting with space
 
-# Editor
-export EDITOR="nvim"
-export VISUAL="nvim"
-
 # Navigation aliases
 alias ll='ls -lah'
 alias la='ls -A'
@@ -61,10 +57,10 @@ elif [[ -f /etc/bash_completion ]]; then
     . /etc/bash_completion
 fi
 
-# Source topic-based alias files
+# Source topic-based config files (aliases, env)
 DOTFILES_DIR="$(dirname "$(readlink -f ~/.bashrc)" 2>/dev/null || dirname "$(realpath ~/.bashrc)" 2>/dev/null)"
-for alias_file in "$DOTFILES_DIR"/../*/aliases; do
-    [[ -f "$alias_file" ]] && . "$alias_file"
+for source_file in "$DOTFILES_DIR"/../*/env "$DOTFILES_DIR"/../*/aliases; do
+    [[ -f "$source_file" ]] && . "$source_file"
 done
 
 # Source local overrides (secrets, machine-specific settings)
