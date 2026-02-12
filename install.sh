@@ -135,6 +135,10 @@ link_file "$DOTFILES_DIR/git/.gitignore" "$HOME/.gitignore"
 # Note: docker/aliases and git/aliases are sourced automatically by .bashrc
 # No symlinks needed - they are sourced relative to the dotfiles directory
 
+# OpenCode
+mkdir -p "$HOME/.config/opencode"
+link_file "$DOTFILES_DIR/opencode/opencode.json" "$HOME/.config/opencode/opencode.json"
+
 # Claude Code - symlink config files into ~/.claude/ (not the whole directory)
 mkdir -p "$HOME/.claude"
 link_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
