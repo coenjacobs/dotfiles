@@ -169,6 +169,10 @@ if (-not (Test-Path $ClaudeDir)) {
     New-Item -ItemType Directory -Path $ClaudeDir -Force | Out-Null
 }
 
+$ClaudeMdSource = Join-Path $DotfilesDir "claude\CLAUDE.md"
+$ClaudeMdDest = Join-Path $ClaudeDir "CLAUDE.md"
+Set-ConfigLink -Source $ClaudeMdSource -Destination $ClaudeMdDest
+
 $ClaudeSettingsSource = Join-Path $DotfilesDir "claude\settings.json"
 $ClaudeSettingsDest = Join-Path $ClaudeDir "settings.json"
 Set-ConfigLink -Source $ClaudeSettingsSource -Destination $ClaudeSettingsDest

@@ -141,6 +141,7 @@ link_file "$DOTFILES_DIR/opencode/opencode.json" "$HOME/.config/opencode/opencod
 
 # Claude Code - symlink config files into ~/.claude/ (not the whole directory)
 mkdir -p "$HOME/.claude"
+link_file "$DOTFILES_DIR/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 link_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
 link_file "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh"
 
