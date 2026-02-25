@@ -23,6 +23,12 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left <CR>")
+		vim.keymap.set("n", "<C-n>", function()
+			if vim.bo.filetype == "neo-tree" then
+				vim.cmd("Neotree close")
+			else
+				vim.cmd("Neotree filesystem reveal left")
+			end
+		end)
 	end,
 }
