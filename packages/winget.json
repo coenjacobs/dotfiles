@@ -11,7 +11,8 @@
         { "PackageIdentifier": "junegunn.fzf" },
         { "PackageIdentifier": "jqlang.jq" },
         { "PackageIdentifier": "Microsoft.WindowsTerminal" },
-        { "PackageIdentifier": "AgileBits.1Password.CLI" }
+        { "PackageIdentifier": "AgileBits.1Password.CLI" },
+        { "PackageIdentifier": "Anthropic.ClaudeCode" }
       ],
       "SourceDetails": {
         "Argument": "https://cdn.winget.microsoft.com/cache",
