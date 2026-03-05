@@ -73,11 +73,11 @@ Write-Host "Installing npm global packages..." -ForegroundColor Cyan
 
 try {
     $null = Get-Command npm -ErrorAction Stop
-    npm install -g @anthropic-ai/claude-code opencode-ai
+    npm install -g @anthropic-ai/claude-code opencode-ai @github/copilot
 }
 catch {
     Write-Host "Warning: npm not found. Claude Code will need to be installed manually after Node.js is available in PATH." -ForegroundColor Yellow
-    Write-Host "Run: npm install -g @anthropic-ai/claude-code opencode-ai" -ForegroundColor Yellow
+    Write-Host "Run: npm install -g @anthropic-ai/claude-code opencode-ai @github/copilot" -ForegroundColor Yellow
 }
 
 Write-Host ""
