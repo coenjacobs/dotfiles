@@ -3,12 +3,21 @@
     "commit": "",
     "pr": ""
   },
-  "alwaysThinkingEnabled": true,
-  "theme": "dark",
-  "plansDirectory": "./.claude/plans",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
     "padding": 0
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "plansDirectory": "./.claude/plans",
+  "theme": "dark",
+  "extraKnownMarketplaces": {
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
+      }
+    }
   }
 }

@@ -154,6 +154,13 @@ link_file "$DOTFILES_DIR/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 link_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
 link_file "$DOTFILES_DIR/claude/statusline.sh" "$HOME/.claude/statusline.sh"
 
+# Obsidian CLI symlink (macOS only)
+if [ "$OS" = "macos" ] && [ -x "/Applications/Obsidian.app/Contents/MacOS/Obsidian" ]; then
+    mkdir -p "$HOME/.local/bin"
+    echo "Linking Obsidian CLI to ~/.local/bin/obsidian..."
+    ln -sf /Applications/Obsidian.app/Contents/MacOS/Obsidian "$HOME/.local/bin/obsidian"
+fi
+
 # Install TPM (Tmux Plugin Manager) if not present
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
     echo "Installing TPM (Tmux Plugin Manager)..."
